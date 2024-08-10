@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: ./todo
+      dockerfile: Dockerfile
+    container_name: todo_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./todo:/code/
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend_container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/code/
