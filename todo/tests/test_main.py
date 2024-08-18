@@ -13,7 +13,7 @@ engine = create_engine(connection_string, connect_args={"sslmode":"require"},poo
 #======================================================================================================
 # Refector with pytest fixture 
 # 4 stages:
-# 1: Arange => Arrange teh resourses like creating the table, session , and client
+# 1: Arange => Arrange the resourses like creating the table, session , and client
 #2 : Act => perform the action what to do
 #3 : assert => verify that your Act perform is correct or not
 #4 : cleanup => clean up the test code
